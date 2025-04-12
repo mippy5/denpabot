@@ -1,0 +1,10 @@
+[package]
+name = "denpabot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = "1.0.219"
+serde_cbor = "0.11.2"
+serenity = { version = "0.12.4", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+tokio = { version = "1.44.2", features = ["rt-multi-thread", "macros"] }
